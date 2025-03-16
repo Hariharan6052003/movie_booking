@@ -10,7 +10,7 @@ const Container = ({ movies, searchTerm, selectedGenre, selectedLanguage, select
   
   const fetchTheatreDetails = async () => {
     try {
-      const response = await fetch('/theatres');
+      const response = await fetch('https://movie-booking-mh54.onrender.com/theatres');
       const data = await response.json(); 
       console.log('Fetched Theatres:', data); 
       setTheatres(data); 
