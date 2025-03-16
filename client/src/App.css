@@ -1,0 +1,219 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #191a1a; /* Dark Charcoal */
+  color: #f4f4f4; /* Light Text Color for better contrast */
+}
+
+
+.app {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.sign-in2{
+  background-color: #339ff8;
+  color: #f0f0f0;
+  height:38px;
+  border:none;
+  font-size: 15px;
+  font-weight: 400;
+  width:75px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.sign-in2:hover{
+  background-color: #007bb5;
+}
+
+/* Navbar Styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a2e;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left a {
+  color: #f4f4f4;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.navbar-left a:hover {
+  color: #00aaff;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right span {
+  color: #f4f4f4;
+  margin-right: 20px;
+}
+
+button.sign-in {
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button.sign-in:hover {
+  background-color: #007bb5;
+}
+
+/* Home Page Styling */
+h1 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #e6e6e6;
+}
+
+/* Movies List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+li span {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Theatre Page */
+h3 {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.showtime-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.showtime {
+  background-color:  #0693ff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.showtime:hover {
+  background-color: #007bb5;
+}
+
+/* Orders Page */
+.orders-list {
+  padding: 0;
+  margin: 0;
+}
+
+.order-item {
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-item span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  button.sign-in {
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .showtime-container {
+    flex-direction: column;
+  }
+}
+
+
+/* Style for the select dropdown */
+.location-dropdown {
+  margin-right: 20px;
+  margin-left:-10px;
+  padding: 9px;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #31a4ec; /* Light blue background */
+  color: white; /* White text */
+  border: none;
+  outline: none;
+}
+
+
+/* Option styling */
+.location-dropdown option {
+  background-color: #1a1a2e; /* Dark blue background for options */
+  color: white; /* White text */
+  padding: 5px;
+}
+
+/* Hover effect on options */
+.location-dropdown option:hover {
+  background-color: #31a4ec; /* Lighter blue background on hover */
+  color: white;
+}

@@ -1,0 +1,117 @@
+.movie-poster {
+  width: 350px;
+  height: 420px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.movie-poster:hover {
+  transform: scale(1.05); /* Slightly enlarge the image */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.seat.booked {
+  background-color: hsl(0, 100%, 50%) !important; /* Red color for booked seats */
+  border-color: #ff0000 !important;
+  cursor: not-allowed;
+}
+
+.seating-chart-container {
+  text-align: center;
+  background-color: #1a1a2e; /* Dark violet background */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 97%;
+  margin: 20px auto;
+}
+
+.screen {
+  background-color: rgb(92, 90, 90);
+  width: 70%;
+  height: 25px;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.seating-section {
+  margin-top: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.row-label {
+  padding-right: 20px;
+  width: 30px; /* Fixed width for row labels */
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+/* Button as seat */
+.seat {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(250, 250, 250, 0.9); /* Translucent white background for seat */
+  border: 2px solid #767676;
+  border-radius: 25px 25px 0 0; /* Rounded top corners to resemble a seat */
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.seat:hover {
+  background-color: rgb(255, 255, 255); /* Slightly brighter on hover */
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.seat.selected {
+  background-color: #0069fc !important; /* Full white color for selected seats (no translucency) */
+  border-color: #0062ff;
+}
+
+.front-section .seat {
+  background-color: rgba(255, 255, 255, 0.363); /* Slightly different shade for front section */
+}
+
+.middle-section .seat {
+  background-color: rgba(255, 255, 255, 0.462); /* Middle section seats */
+}
+
+.back-section .seat {
+  background-color: rgba(255, 255, 255, 0.577); /* Slightly different shade for back section */
+}
+
+.seat:active {
+  transform: scale(0.9); /* Slightly shrink when clicked */
+}
+
+h4{
+  color:rgb(205, 44, 44);
+}
+
+.seat-numbers {
+  display: flex;
+  justify-content: center; /* Center align the seat numbers */
+  margin-top: 31px; /* Space above the seat numbers */
+  margin-left: 45px; /* Remove left margin to align properly */
+}
+
+.seat-number {
+  font-size: 18px; /* Font size for seat numbers */
+  color: white; /* Color for seat numbers */
+  margin: 0 5px; /* Adjust spacing between seat numbers */
+  width: 30px; /* Fixed width to ensure alignment */
+  text-align: center; /* Center the number within its box */
+}
+
+
+

@@ -1,0 +1,63 @@
+.history-container {
+    padding: 20px;
+    max-width: 100%; /* Limit the width of the order history */
+    margin-top:30px; /* Center the container */
+    background-color:  #1a1a2e; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  h2 {
+    text-align: center; /* Center the title */
+    color: #ffffff; /* Dark color for title */
+  }
+  
+  ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+  }
+  
+  li {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 15px; /* Padding around each order */
+    border: 1px solid #323131; /* Light border for separation */
+    margin-bottom: 10px; /* Space between each order */
+    border-radius: 5px; /* Slightly rounded corners */
+    background-color: #ffffff; /* White background for each order */
+    transition: background-color 0.3s; /* Transition for hover effect */
+  }
+  
+  li:hover {
+    background-color: #d2d2d2; /* Slightly darker on hover */
+  }
+  
+  li img {
+    width: 80px; /* Set a fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between image and text */
+  }
+  
+  li h3 {
+    margin: 0; /* Remove default margin */
+    color: #0b0b0b; /* Medium dark color for movie title */
+  }
+
+  
+  li p {
+    margin: 5px 0; /* Space out paragraphs */
+    color: #000000; /* Light color for additional details */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    li {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start; /* Align items to the start */
+    }
+  
+    li img {
+      margin-bottom: 10px; /* Space below image */
+    }
+  }
+  

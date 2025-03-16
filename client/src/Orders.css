@@ -1,0 +1,347 @@
+/* Orders.css */
+
+.orders-container {
+    padding: 10px;
+    background-color: #1a1a2e;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Order strip styling */
+  .order-strip {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #1a1a2e;
+    padding: 10px;
+    border-radius: 10px;
+   
+  }
+  
+  .order-movie-image {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .order-details {
+    flex: 1;
+  }
+
+  .payment-button{
+    background-color: #1cc053; /* Blue color */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    padding: 10px 15px;
+  }
+  .payment-button::after{
+    color: red;
+  }
+  /* View Ticket Button */
+  .view-ticket-button {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .view-ticket-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Ticket Popup Modal */
+  .ticket-popup {
+    position: fixed;
+    top: -45px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ticket container with a cut edge */
+  .ticket-container {
+    background-color: #fff;
+    width: 300px; /* Square shaped */
+    padding: 25px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: black; /* Black text */
+  }
+  
+  /* Ticket title and image */
+  .ticket-title {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .ticket-movie-image {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* QR Code styling */
+  .ticket-qr-code {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  /* Enjoy message */
+  .enjoy-message {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, sans-serif bold;
+    color: #31a4ec;
+    margin-top: 15px;
+  }
+  
+ 
+  
+  
+  
+  
+  
+  
+  /* Close button styling */
+  .close-ticket-button {
+    background-color: #007bff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .close-ticket-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .p1{
+    color: black;
+  }
+
+
+
+
+
+
+
+  /* Payment Popup Background */
+.payment-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Payment Popup Content */
+.payment-popup-content {
+  background: #fff;
+  padding: 20px 30px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.payment-popup-content h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.payment-popup-content p {
+  font-size: 1em;
+  margin: 8px 0;
+  color: #555;
+}
+
+/* UPI Options */
+.upi-options {
+  margin-top: 15px;
+}
+
+/* Pay Button */
+.pay-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.pay-button:hover {
+  background-color: #218838;
+}
+
+/* Close Payment Button */
+.close-payment-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 0.9em;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.close-payment-button:hover {
+  background-color: #c82333;
+}
+
+/* Container for the "Kindly place your order" message */
+.orders-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #1e1d1d; /* Light background */
+}
+
+.orders-container1 p5 {
+  font-size: 1.5em;
+  color: #ffffff; /* Tomato color for emphasis */
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -650px;
+}
+
+
+/* Payment Popup Background */
+.payment-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Payment Popup Content */
+.payment-popup-content {
+  background: #fff;
+  padding: 20px 30px;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+.payment-popup-content h3 {
+  font-size: 1.4em;
+  color: #333;
+  margin: 10px 0 20px;
+  font-weight: 600;
+}
+
+.paytm-logo {
+  width: 100px;
+  margin: 0 auto 15px;
+}
+
+/* Payment Amount */
+.payment-amount {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* UPI Options */
+.upi-options {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.qr-instructions {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Pay Button */
+.pay-button {
+  background-color: #0070f3; /* Paytm blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  font-size: 1em;
+  cursor: pointer;
+  width: 30%;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.pay-button:hover {
+  background-color: #005bb5;
+}
+
+/* Close Payment Button */
+.close-payment-button {
+  background-color: #ff4d4f; /* Cancel red */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 0;
+  font-size: 0.9em;
+  cursor: pointer;
+  width: 30%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.close-payment-button:hover {
+  background-color: #d32f2f;
+}
+
+
+.upi-logo {
+  width: 65px; /* Adjust the width as needed */
+  height: 25px;
+  margin-left: 8px; /* Add space between text and logo */
+  vertical-align: middle; /* Align logo with text */
+}

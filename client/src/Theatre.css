@@ -1,0 +1,80 @@
+/* Styles for the Theatre component */
+.theatre-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+   
+}
+
+.theatre-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0056b3;
+}
+
+.theatre-container p {
+    font-size: 17px;
+    margin: 5px;
+    color: #646667;
+}
+
+.theatre-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.theatre-container li {
+    border: 1px solid #635f5f;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #1a1a2e;
+    transition: box-shadow 0.3s;
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.theatre-container li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fffafa;
+}
+
+.theatre-container h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #227cdd;
+}
+
+.theatre-location {
+    font-size: 1rem;
+    color: #6c6a6a;
+}
+
+/* Book Now Button Styles */
+.book-now-button {
+    background-color: #0095ff; /* Button background color */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Round the corners */
+    padding: 10px 15px; /* Add padding to the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-top: 10px; /* Add space above the button */
+    width: 120px; /* Set a fixed width for the button */
+    transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+/* Prevent size increase on hover */
+.book-now-button:hover {
+    background-color: #0066ff; /* Darker blue on hover */
+    /* Removed the transform property to keep the button size fixed */
+}
+
+.error-message {
+    color: red; /* Red color for error messages */
+    text-align: center; /* Center align error messages */
+    font-weight: bold; /* Make error messages bold */
+    margin: 15px 0; /* Add margin above and below error messages */
+}
