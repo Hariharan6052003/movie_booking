@@ -9,7 +9,7 @@ const TheatreList = ({ location }) => {
   useEffect(() => {
     const fetchTheatres = async () => {
       try {
-        const response = await fetch('/theatres'); // Fetch theatres from the backend
+        const response = await fetch('https://movie-booking-mh54.onrender.com/theatres'); // Fetch theatres from the backend
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
