@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './Theatre.css'; // Import the CSS file
+import { useNavigate } from "react-router-dom";
 
 const TheatreList = ({ location }) => {
   const [theatres, setTheatres] = useState([]); // State to hold all theatre data
+  const navigate = useNavigate();
   const [error, setError] = useState(null); // State to hold error messages
 
   // Fetch theatres from the backend when the component mounts
@@ -42,7 +44,7 @@ const TheatreList = ({ location }) => {
               <h3>{theatre.name}</h3>
               <p className="theatre-location">Location: {theatre.location}</p>
               <p>Address: {theatre.loc}</p>
-              <button className="book-now-button">Book Now</button>
+              <button className="book-now-button" onClick={() => navigate("/home")}>Book Now</button>
             </li>
           ))
         ) : (
