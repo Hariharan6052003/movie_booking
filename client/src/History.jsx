@@ -11,7 +11,7 @@ const History = ({ email }) => {
       setLoading(true); // Start loading
 
       try {
-        const response = await fetch(`http://localhost:5000/orders/${email}`);
+        const response = await fetch(`https://movie-booking-mh54.onrender.com/orders/${email}`);
         
         // Check if the response is ok (status code 200-299)
         if (!response.ok) {

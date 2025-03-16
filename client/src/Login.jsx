@@ -20,7 +20,7 @@ const Login = ({ onClose, setUsername, setUserEmail }) => { // Add setUserEmail
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const url = `http://localhost:5000/login?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`;
+    const url = `https://movie-booking-mh54.onrender.com/login?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`;
 
     try {
       const response = await fetch(url, {

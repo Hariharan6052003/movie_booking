@@ -21,7 +21,7 @@ const Orders = ({ email }) => {
 
   const handlePayment = async () => {
     try {
-      const response = await fetch('http://localhost:5000/orders', {
+      const response = await fetch('https://movie-booking-mh54.onrender.com/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

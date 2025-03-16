@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/theatres': {
-        target: 'http://localhost:5000', // Your backend server URL
+        target: 'https://movie-booking-mh54.onrender.com', // Your backend server URL
         changeOrigin: true,
       },
     },
