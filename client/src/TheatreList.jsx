@@ -3,8 +3,8 @@ import './Theatre.css'; // Import the CSS file
 import { useNavigate } from "react-router-dom";
 
 const TheatreList = ({ location }) => {
-  const [theatres, setTheatres] = useState([]); // State to hold all theatre data
   const navigate = useNavigate();
+  const [theatres, setTheatres] = useState([]); // State to hold all theatre data
   const [error, setError] = useState(null); // State to hold error messages
 
   // Fetch theatres from the backend when the component mounts
