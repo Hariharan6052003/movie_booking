@@ -83,7 +83,7 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model('User', userSchema);
 
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 // Signup route
 app.post('/signup', async (req, res) => {
