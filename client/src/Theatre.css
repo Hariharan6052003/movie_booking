@@ -78,3 +78,35 @@
     font-weight: bold; /* Make error messages bold */
     margin: 15px 0; /* Add margin above and below error messages */
 }
+
+
+@media (max-width: 768px) {
+    .theatre-container {
+        padding: 15px;
+    }
+
+    .theatre-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .book-now-button {
+        width: 100%;
+        max-width: 130px;
+    }
+}
+
+@media (max-width: 480px) {
+    .theatre-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .theatre-container li {
+        padding: 10px;
+    }
+
+    .book-now-button {
+        font-size: 0.9rem;
+        max-width: 120px;
+    }
+}
+
