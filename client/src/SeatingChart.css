@@ -114,4 +114,119 @@ h4{
 }
 
 
+@media screen and (max-width: 768px) {
+  .seating-chart-container {
+    padding: 5px;
+    text-align: center;
+  }
+
+  .movie-poster {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .screen {
+    font-size: 0.9rem;
+    padding: 4px;
+    margin-bottom: 8px;
+  }
+
+  .seating-section {
+    margin-bottom: 15px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1px;
+  }
+
+  .row-label {
+    width: 15px;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  .row-section {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 3px;
+  }
+
+  /* Seat Styling */
+  .seat {
+    width: 10px; 
+    height: 14px;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Seat Numbers */
+  .seat-numbers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-top: 4px;
+  }
+
+  .seat-number {
+    font-size: xx-small;
+    width: 4.5px;
+    text-align: center;
+  }
+
+  /* Booking Summary */
+  .booking-summary {
+    padding: 8px;
+  }
+
+  .book-now-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  /* Modal Overlay */
+  .modal-overlay {
+    padding: 5px;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    width: 85%;
+    padding: 1rem;
+  }
+
+  /* Input Field */
+  .input-field {
+    width: 100%;
+  }
+
+  /* Sign Up Button */
+  .sign-up-button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* Password Toggle Icon */
+  .password-toggle-icon {
+    right: 0.3rem;
+  }
+
+  /* Close Icon */
+  .close-icon {
+    top: 0.3rem;
+    right: 0.3rem;
+    font-size: 1.3rem;
+  }
+}
+
+
 
