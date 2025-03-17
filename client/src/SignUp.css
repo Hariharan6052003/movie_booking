@@ -207,6 +207,7 @@
   animation: slideOutToRight 0.7s forwards;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
   .modal-content {
     width: 70%;
@@ -217,7 +218,7 @@
   .sign-up-button {
     font-size: 1rem;
     padding: 10px;
-    margin-left: 80px;
+    margin-left: 120px;
   }
 
 }
@@ -230,7 +231,7 @@
   .sign-up-button {
     font-size: 1rem;
     padding: 10px;
-    margin-left: 40px;
+    margin-left: 100px;
   }
 
   .close-icon {
