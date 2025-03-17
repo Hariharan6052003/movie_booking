@@ -124,3 +124,50 @@
 .timing-button:hover {
   background-color: #0693ff;/* Darker color on hover */
 }
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .movie-panel {
+    flex: 1 1 calc(50% - 20px); /* 2 panels per row on tablets */
+    max-width: calc(50% - 20px);
+  }
+
+  .movie-details {
+    padding: 20px;
+  }
+
+  .movie-details .img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-panel {
+    flex: 1 1 100%; /* 1 panel per row on mobile */
+    max-width: 100%;
+  }
+
+  .movie-details .img {
+    width: 250px;
+  }
+
+  .movie-details h3 {
+    font-size: 1.5rem;
+  }
+
+  .movie-details h4 {
+    font-size: 1rem;
+  }
+
+  .back-button {
+    width: 100%;
+  }
+
+  .theatre-container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
