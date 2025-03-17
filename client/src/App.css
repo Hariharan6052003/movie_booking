@@ -200,6 +200,7 @@ h3 {
     width : 100%;
     margin-top: 10px;
     margin-left: 30px;
+    font-size:14px;
     
   }
 
@@ -222,6 +223,8 @@ h3 {
     
     width : 100%;
     margin-top:20px;
+    margin-left: 20px;
+    font-size: 0px;
   }
 
   .navbar-right .sign-in{
@@ -237,9 +240,9 @@ h3 {
 
 
   .location-dropdown {
-    font-size: 12px;
+    font-size: 10px;
     padding: 6px;
-    width: 100px;
+    width: 70px;
   }
 
   .sign-in, .sign-in2 {
