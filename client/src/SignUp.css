@@ -211,7 +211,15 @@
   .modal-content {
     width: 70%;
     padding: 1.5rem;
+    
   }
+
+  .sign-up-button {
+    font-size: 1rem;
+    padding: 10px;
+    margin-left: 120px;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -222,6 +230,7 @@
   .sign-up-button {
     font-size: 1rem;
     padding: 10px;
+    margin-left: 40px;
   }
 
   .close-icon {
