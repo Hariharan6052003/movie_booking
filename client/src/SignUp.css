@@ -206,3 +206,25 @@
 .modal-content.slide-out {
   animation: slideOutToRight 0.7s forwards;
 }
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 70%;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-title {
+    font-size: 1.5rem;
+  }
+
+  .sign-up-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .close-icon {
+    font-size: 1.5rem;
+  }
+}
