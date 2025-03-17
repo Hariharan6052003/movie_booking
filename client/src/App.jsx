@@ -48,10 +48,10 @@ function App() {
       <div className="app">
         <nav>
           <div className="navbar-left">
-            <Link to="/home">Home</Link>
-            <Link to="/theatre-list">Theatre</Link>
-            <Link to="/orders">Orders</Link>
-            <Link to="/history">History</Link>
+           <Link to="/home" className='home'>Home</Link>
+            <Link to="/theatre-list" className='theatre-list'>Theatre</Link>
+            <Link to="/orders" className='orders'>Orders</Link>
+            <Link to="/history" className='history'>History</Link>
           </div>
           <div className="navbar-right">
             <span>Location: </span>
