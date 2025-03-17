@@ -345,3 +345,85 @@
   margin-left: 8px; /* Add space between text and logo */
   vertical-align: middle; /* Align logo with text */
 }
+
+
+@media (max-width: 1024px) {
+  .orders-container {
+    padding: 15px;
+  }
+
+  .order-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .order-movie-image {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+
+  .ticket-container {
+    width: 280px;
+    padding: 20px;
+  }
+
+  .payment-popup-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-strip {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .order-movie-image {
+    width: 70px;
+  }
+
+  .ticket-container {
+    width: 250px;
+    padding: 15px;
+  }
+
+  .ticket-movie-image {
+    height: 200px;
+  }
+
+  .pay-button, .close-payment-button {
+    width: 100%;
+  }
+
+  .orders-container1 p5 {
+    font-size: 24px;
+    margin-top: -400px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-movie-image {
+    width: 60px;
+  }
+
+  .ticket-container {
+    width: 220px;
+  }
+
+  .ticket-movie-image {
+    height: 180px;
+  }
+
+  .pay-button, .close-payment-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .orders-container1 p5 {
+    font-size: 20px;
+    margin-top: -300px;
+  }
+}
